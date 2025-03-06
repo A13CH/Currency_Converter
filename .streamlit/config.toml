@@ -5,10 +5,10 @@ toolbarMode = "minimal"
 level = "warning"
 
 [theme]
-primaryColor="#000000"
-backgroundColor="#325ca8"
-secondaryBackgroundColor="#91a9ff"
-textColor="#dbe3ff"
+primaryColor="#4294ff"
+backgroundColor="#6397ff"
+secondaryBackgroundColor="#356dde"
+textColor="#f7f8fa"
 font="verdana"
 
 [browser]

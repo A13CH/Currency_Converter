@@ -5,11 +5,11 @@ toolbarMode = "minimal"
 level = "warning"
 
 [theme]
-primaryColor="#F63366"
-backgroundColor="#FFFFFF"
-secondaryBackgroundColor="#F0F2F6"
-textColor="#262730"
-font="sans serif"
+primaryColor="#000000"
+backgroundColor="#325ca8"
+secondaryBackgroundColor="#91a9ff"
+textColor="#dbe3ff"
+font="verdana"
 
 [browser]
 gatherUsageStats = false

@@ -54,10 +54,10 @@ selection_one = st.selectbox("From", symbols, index=0, key="Select a starting cu
 symbol_one = selection_one.split(' ')[0]
 
 # Create three columns: left, center, and right
-col1, col2, col3 = st.columns([1, 2, 1])
+col1, col2, col3 = st.columns([1, 1, 1])
 # Use the center column to display the image
 with col2:
-    st.image("images/exchange.png", width = 300)
+    st.image("images/arrows.svg", width = 200)
 
 # Selectbox for currency to convert to 
 selection_two = st.selectbox("To", symbols, index=0, key="Select a ending currency", help=None, on_change=None, args=None, kwargs=None, placeholder="Choose an option", disabled=False, label_visibility="visible")

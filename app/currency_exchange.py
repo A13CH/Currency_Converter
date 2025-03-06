@@ -30,7 +30,7 @@ col1, col2, col3 = st.columns([1, 2, 1])
 
 # Use the center column to display the image
 with col2:
-    st.image("exchange.png", width = 300)  # Uncomment if you want it responsive
+    st.image("images/exchange.png", width = 300)  # Uncomment if you want it responsive
 
 # Selectbox for currency to convert to 
 selection_two = st.selectbox("Currency 2", rate_symbols, index=0, key="Select a ending currency", help=None, on_change=None, args=None, kwargs=None, placeholder="Choose an option", disabled=False, label_visibility="visible")

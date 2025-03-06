@@ -9,8 +9,10 @@ from json import dump, load
 from requests import get
 import streamlit as st
 
-DATA_URL = "http://api.exchangeratesapi.io/v1/latest?access_key=c3128c5d3ea7324688906d0190169f07"
-CURRENCY_LIST_URL = "https://api.exchangeratesapi.io/v1/symbols?access_key=c3128c5d3ea7324688906d0190169f07"
+key = st.secrets.API_key
+
+DATA_URL = "http://api.exchangeratesapi.io/v1/latest?access_key={key}"
+CURRENCY_LIST_URL = "https://api.exchangeratesapi.io/v1/symbols?access_key=c{key}"
 DATA_FILE = "./app/data/data.json"
 CURRENCY_LIST_FILE = "./app/data/currency_list.json"
 

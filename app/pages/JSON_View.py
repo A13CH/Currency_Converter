@@ -2,6 +2,11 @@ import streamlit as st
 import json
 from data import get_data, get_currency_list, DATA_FILE, CURRENCY_LIST_FILE
 
+st.set_page_config(
+    page_title="Currency Coverter",
+    page_icon="💰"
+)
+
 with open("./app/data/data.json", 'r') as file:
     exchange_data = json.load(file)
 

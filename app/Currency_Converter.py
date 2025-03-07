@@ -6,7 +6,7 @@ Description: Streamlit front-end for currency_exchange
 """
 
 import streamlit as st
-from data import get_data, get_currency_list
+from data import get_data, get_currency_list, CURRENCY_LIST_URL
 
 st.set_page_config(
     page_title="Currency Coverter",

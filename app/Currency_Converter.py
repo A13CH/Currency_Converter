@@ -1,8 +1,11 @@
-""" Streamlit front-end for currency_exchange """
+"""
+File: Currency_Converter.py
+Author: Alec Hoelscher
+Date: 03/06/2024
+Description: Streamlit front-end for currency_exchange
+"""
+
 import streamlit as st
-from requests import get
-from time import sleep
-import json
 from data import get_data, get_currency_list
 
 st.set_page_config(
@@ -10,13 +13,8 @@ st.set_page_config(
     page_icon="💰",
 )
 
-#simpliy before deploying with data = get_data()
-with open("./app/data/data.json", 'r') as file:
-    exchange_data = json.load(file)
-
-#simpliy before deploying with data = get_currency_list()
-with open("./app/data/currency_list.json", 'r') as file:
-    currency_list = json.load(file)
+exchange_data = get_data()
+currency_list = get_currency_list()
 
 # List to store the symbol-value pair strings
 symbols = []
@@ -28,6 +26,7 @@ for symbol, name in currency_list["symbols"].items():
 # Website title
 st.title("Currency Converter")
 
+# Collect value to convert
 amount_one = st.number_input("Value")
 
 # Selectbox for initial currency
@@ -35,7 +34,7 @@ selection_one = st.selectbox("From", symbols, index=0, key="Select a starting cu
 # Reformatting selection_one to get symbol_one
 symbol_one = selection_one.split(' ')[0]
 
-# Create three columns: left, center, and right
+# Creating 3 columns for the arrows icon
 col1, col2, col3 = st.columns([1, 1, 1])
 # Use the center column to display the image
 with col2:

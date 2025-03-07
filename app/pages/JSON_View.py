@@ -1,3 +1,10 @@
+"""
+File: JSON_View.py
+Author: Alec Hoelscher
+Date: 03/06/2024
+Description: Front end for the JSON_View page
+"""
+
 import streamlit as st
 import json
 from data import get_data, get_currency_list, DATA_FILE, CURRENCY_LIST_FILE

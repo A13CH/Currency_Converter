@@ -37,7 +37,7 @@ def get_data(data_url: str = DATA_URL, data_file: str = DATA_FILE) -> dict:
     return {}
 
 @st.cache_data(show_spinner="Fetching data from API...", ttl=60*10)
-def get_currency_list(currency_list_url: str = CURRENCY_LIST_URL, currency_list_file: str = CURRENCY_LIST_FILE):
+def get_currency_list(currency_list_url: str = CURRENCY_LIST_URL, currency_list_file: str = CURRENCY_LIST_FILE) -> dict:
     """Get currency list data from the API"""
     try:
         currency_data = get(url=currency_list_url, timeout=3).json()

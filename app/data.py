@@ -8,6 +8,7 @@ Description: Program to obtain the current currency exchange rates
 from json import dump, load
 from requests import get
 import streamlit as st
+from datetime import timedelta
 
 key = st.secrets["API_key"]
 
@@ -16,7 +17,7 @@ CURRENCY_LIST_URL = f"https://api.exchangeratesapi.io/v1/symbols?access_key={key
 DATA_FILE = "./app/data/data.json"
 CURRENCY_LIST_FILE = "./app/data/currency_list.json"
 
-@st.cache_data(show_spinner="Fetching data from API...", ttl=60*10)
+@st.cache_data(show_spinner="Fetching data from API...", ttl=timedelta(days=1))
 def get_data(data_url: str = DATA_URL, data_file: str = DATA_FILE) -> dict:
     """Get rate data from the API"""
     try:
@@ -36,7 +37,7 @@ def get_data(data_url: str = DATA_URL, data_file: str = DATA_FILE) -> dict:
         st.error(str(err))
     return {}
 
-@st.cache_data(show_spinner="Fetching data from API...", ttl=60*10)
+@st.cache_data(show_spinner="Fetching data from API...", ttl=timedelta(days=1))
 def get_currency_list(currency_list_url: str = CURRENCY_LIST_URL, currency_list_file: str = CURRENCY_LIST_FILE) -> dict:
     """Get currency list data from the API"""
     try:

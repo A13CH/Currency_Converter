@@ -1,4 +1,4 @@
-# Dockerfile to create the container image for the Cluster Visualization App (CVA)
+# Dockerfile to create the container image for the Currency converter app
 FROM python:3.12
 LABEL maintainer="Alec Hoelscher <alechoelscher@Alecs-MacBook-Pro.com>"
 

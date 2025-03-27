@@ -7,9 +7,9 @@ RUN apt-get update && \
     ln -fs /usr/share/zoneinfo/America/Phoenix /etc/localtime && \
     dpkg-reconfigure -f noninteractive tzdata
 
-COPY . /cva
-RUN pip install --no-cache-dir --upgrade -r /cva/requirements.txt
-WORKDIR /cva/
+COPY . /Currency_Converter
+RUN pip install --no-cache-dir --upgrade -r /Currency_Converter/requirements.txt
+WORKDIR /Currency_Converter/
 
 EXPOSE 8000
 

@@ -7,9 +7,9 @@ RUN apt-get update && \
     ln -fs /usr/share/zoneinfo/America/Phoenix /etc/localtime && \
     dpkg-reconfigure -f noninteractive tzdata
 
-COPY . /cva
-RUN pip install --no-cache-dir --upgrade -r /cva/requirements.txt
-WORKDIR /cva/
+COPY . /Currency_Converter
+RUN pip install --no-cache-dir --upgrade -r /Currency_Converter/requirements.txt
+WORKDIR /Currency_Converter/
 
 EXPOSE 8000
 
@@ -17,5 +17,5 @@ EXPOSE 8000
 #  ensures that the python output is sent straight to terminal (e.g. the container log) without being first buffered
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
-ENV PYTHONPATH=/cva
+ENV PYTHONPATH=/currency_converter
 CMD ["python3.12",  "-m", "streamlit", "run", "--server.port", "8000", "./app/Currency_Converter.py"]

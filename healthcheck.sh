@@ -10,7 +10,7 @@
 # then wait for 5 seconds, make an HTTP GET request and check the response status.
 # It will then kill the application and exit with 0 if the health check was OK, otherwise it will exit with 1.
 
-(python3.13 -m streamlit run --server.port 8000 src/app.py) &
+(python3.13 -m streamlit run --server.port 8000 src/Currency_Converter.py) &
 spid=$!
 sleep 5
 status=$(curl -L http://localhost:8000/health -o /dev/null -w '%{http_code}\n' -s)

@@ -10,6 +10,9 @@ from requests import get
 import streamlit as st
 from datetime import timedelta
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 key = os.getenv("SECRET_KEY")
 if not key:

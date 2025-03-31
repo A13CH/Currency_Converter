@@ -1,3 +1,10 @@
+# Based on: GitHub Actions "Python application" template
+#
+# GitHub Actions workflow to build, lint, and test a python app
+# Author: Alec Hoelscher with help from Github Copilot
+#
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+
 name: run-tests
 env:
   PYTHON_VERSION: "3.13"

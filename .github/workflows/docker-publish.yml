@@ -1,3 +1,11 @@
+# Based on: GitHub Actions: "Publish Docker Container"
+#
+# GitHub Actions workflow to build and publish a docker image to the GitHub Container Registry
+# Author: Alec Hoelscher with help from Github Copilot
+# This workflow will build a docker image and publish it to the GitHub Container Registry
+# This workflow creates a Multi-platform image with GitHub Actions, for linux/amd64,linux/arm64/v8
+#
+
 name: docker-publish
 env:
   REGISTRY: ghcr.io # GitHub Container Registry
@@ -48,3 +56,5 @@ jobs:
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
+          build-args: |
+            SECRET_KEY=${{ secrets.SECRET_KEY }}

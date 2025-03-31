@@ -1,9 +1,10 @@
-# Based on: GitHub Actions "Python application" template
-#
-# GitHub Actions workflow to build, lint, and test a python app
+# File: pyton-test.yml
 # Author: Alec Hoelscher with help from Github Copilot
-#
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# Date: 03/31/2025
+# Description: GitHub Actions workflow to build and test a python app
+# This workflow will install Python dependencies and run tests with a single version of Python
+# 
+# NOTE: Based on GitHub Actions "Python application" template 
 
 name: run-tests
 env:

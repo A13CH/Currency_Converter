@@ -1,10 +1,11 @@
-# Based on: GitHub Actions: "Publish Docker Container"
-#
-# GitHub Actions workflow to build and publish a docker image to the GitHub Container Registry
+# File: docker-publish.yml
 # Author: Alec Hoelscher with help from Github Copilot
-# This workflow will build a docker image and publish it to the GitHub Container Registry
+# Date: 03/31/2025
+# Description: GitHub Actions workflow to build and publish a docker image to the GitHub Container Registry.
+# This workflow will build a docker image and publish it to the GitHub Container Registry.
 # This workflow creates a Multi-platform image with GitHub Actions, for linux/amd64,linux/arm64/v8
-#
+# 
+# NOTE: Based on GitHub Actions: "Publish Docker Container"
 
 name: docker-publish
 env:

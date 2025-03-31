@@ -1,0 +1,7 @@
+services:
+  currency_converter:
+    container_name: currency_converter
+    build:
+      dockerfile: Dockerfile
+      args:
+        - SECRET_KEY=$SECRET_KEY

@@ -1,4 +1,5 @@
-.venv
-.dockerignore
-.gitignore
-dockerfile
+/**
+!/.streamlit
+!/src
+!requirements.txt
+!healthcheck.sh

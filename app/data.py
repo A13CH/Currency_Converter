@@ -9,8 +9,11 @@ from json import dump, load
 from requests import get
 import streamlit as st
 from datetime import timedelta
+import os
 
-key = st.secrets["API_key"]
+key = os.getenv("SECRET_KEY")
+if not key:
+    raise ValueError("SECRET_KEY is not set")
 
 DATA_URL = f"http://api.exchangeratesapi.io/v1/latest?access_key={key}"
 CURRENCY_LIST_URL = f"https://api.exchangeratesapi.io/v1/symbols?access_key={key}"

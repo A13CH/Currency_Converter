@@ -10,3 +10,6 @@ The Currency Converter is a web application that allows users to convert between
 
 ## Deployment
 The app is currently deployed locally but in the future will be hosted on an Ubuntu server instance on my Raspberry Pi 5.
+
+## Example
+![Screenshot of Currency Converter](src/images/web_example.jpeg)

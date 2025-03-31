@@ -6,7 +6,7 @@ Description: Streamlit front-end for currency_exchange
 """
 
 import streamlit as st
-from data import get_data, get_currency_list, CURRENCY_LIST_URL
+from data import get_data, get_currency_list
 
 st.set_page_config(
     page_title="Currency Coverter",
@@ -38,7 +38,7 @@ symbol_one = selection_one.split(' ')[0]
 col1, col2, col3 = st.columns([1, 1, 1])
 # Use the center column to display the image
 with col2:
-    st.image("./app/images/arrows.svg", width = 200)
+    st.image("./src/images/arrows.svg", width = 200)
 
 # Selectbox for currency to convert to 
 selection_two = st.selectbox("To", symbols, index=0, key="Select a ending currency", help=None, on_change=None, args=None, kwargs=None, placeholder="Choose an option", disabled=False, label_visibility="visible")

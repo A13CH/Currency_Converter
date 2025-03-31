@@ -1,6 +1,4 @@
-![Python Test](https://github.com/a13ch/Currency_Converter/actions/workflows/python-test.yml/badge.svg)
-
-![Docker Publish](https://github.com/a13ch/Currency_Converter/actions/workflows/docker-publish.yml/badge.svg)
+![Python Test](https://github.com/a13ch/Currency_Converter/actions/workflows/python-test.yml/badge.svg) ![Docker Publish](https://github.com/a13ch/Currency_Converter/actions/workflows/docker-publish.yml/badge.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 # Currency Converter
 

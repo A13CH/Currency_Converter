@@ -1,5 +1,5 @@
 # Dockerfile to create the container image for the Currency converter app
-FROM python:3.13-slim
+FROM python:3.12
 LABEL maintainer="Alec Hoelscher <alechoelscher@Alecs-MacBook-Pro.com>"
 
 RUN apt-get update && \

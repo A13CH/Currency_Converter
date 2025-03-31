@@ -7,17 +7,17 @@ Description: Front end for the JSON_View page
 
 import streamlit as st
 import json
-from data import get_data, get_currency_list, DATA_FILE, CURRENCY_LIST_FILE
+from data import DATA_FILE, CURRENCY_LIST_FILE
 
 st.set_page_config(
     page_title="Currency Coverter",
     page_icon="💰"
 )
 
-with open("./app/data/data.json", 'r') as file:
+with open("./src/data/data.json", 'r') as file:
     exchange_data = json.load(file)
 
-with open("./app/data/currency_list.json", 'r') as file:
+with open("./src/data/currency_list.json", 'r') as file:
     currency_list = json.load(file)
 
 st.title("Exchange Rates")

@@ -9,7 +9,7 @@ RUN apt-get update && \
 
 COPY . /Currency_Converter
 RUN pip install --no-cache-dir --upgrade -r /Currency_Converter/requirements.txt
-RUN chmod +x /wordgame/healthcheck.sh
+RUN chmod +x /Currency_Converter/healthcheck.sh
 WORKDIR /Currency_Converter/
 
 EXPOSE 8000

@@ -1,6 +1,6 @@
-![pyton-test](https://github.com/github/docs/actions/workflows/python-test.yml/badge.svg)
+![Python Test](https://github.com/alechoelscher/currency_converter/actions/workflows/python-test.yml/badge.svg)
 
-![Docker-publish](https://github.com/github/docs/actions/workflows/docker-publish.yml/badge.svg)
+![Docker Publish](https://github.com/alechoelscher/currency_converter/actions/workflows/docker-publish.yml/badge.svg)
 
 # Currency Converter
 

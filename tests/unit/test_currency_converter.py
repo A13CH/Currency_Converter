@@ -8,8 +8,14 @@ Description: Test cases for the currency_converter program
 import streamlit as st
 from requests import get
 from data import get_data, get_currency_list
+from dotenv import load_dotenv
+import os
 
-key = st.secrets["API_key"]
+load_dotenv()
+
+key = os.getenv("SECRET_KEY")
+if not key:
+    raise ValueError("SECRET_KEY is not set")
 
 def test_get_data() -> None:
     """Testing get_data function"""

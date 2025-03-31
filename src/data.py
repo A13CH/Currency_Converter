@@ -20,8 +20,8 @@ if not key:
 
 DATA_URL = f"http://api.exchangeratesapi.io/v1/latest?access_key={key}"
 CURRENCY_LIST_URL = f"https://api.exchangeratesapi.io/v1/symbols?access_key={key}"
-DATA_FILE = "./app/data/data.json"
-CURRENCY_LIST_FILE = "./app/data/currency_list.json"
+DATA_FILE = "./src/data/data.json"
+CURRENCY_LIST_FILE = "./src/data/currency_list.json"
 
 @st.cache_data(show_spinner="Fetching data from API...", ttl=timedelta(days=1))
 def get_data(data_url: str = DATA_URL, data_file: str = DATA_FILE) -> dict:

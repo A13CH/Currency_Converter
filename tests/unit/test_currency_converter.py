@@ -7,7 +7,7 @@ Description: Test cases for the currency_converter program
 
 import streamlit as st
 from requests import get
-from data import get_data, get_currency_list
+from src.data import get_data, get_currency_list
 from dotenv import load_dotenv
 import os
 

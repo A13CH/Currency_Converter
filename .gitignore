@@ -4,5 +4,4 @@ src/__pycache__/
 .pytest_cache/
 *.pyc
 app.log
-.vscode/
 .env

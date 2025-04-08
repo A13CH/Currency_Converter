@@ -2,7 +2,7 @@
 
 # Currency Converter
 
-The Currency Converter is a web application that allows users to convert between different currencies using real-time exchange rate data. The application is built with Python and Streamlit, and it fetches exchange rate information from a reliable API.
+Currency Converter is a web application that allows users to convert between different currencies using real-time exchange rate data. The application is built with Python and Streamlit, and it fetches exchange rate information from a reliable API.
 
 ## Features
 
@@ -11,7 +11,7 @@ The Currency Converter is a web application that allows users to convert between
 - Easy-to-use Streamlit UI
 
 ## Deployment
-The app is currently deployed locally but in the future will be hosted on an Ubuntu server instance on my Raspberry Pi 5.
+This app is deployed on my Raspberry Pi 5 and can viewed at the url: 103Parking.com
 
 ## Example
 ![Screenshot of Currency Converter](src/images/web_example.jpeg)

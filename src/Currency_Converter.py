@@ -52,4 +52,4 @@ else:
     converted_value = (amount_one / exchange_data["rates"][symbol_one]) * exchange_data["rates"][symbol_two]
 
 # Display converted value with two decimal places
-st.subheader(f"{amount_one:.3f} {symbol_one} is equal to {converted_value:.3f} {symbol_two}")
+st.subheader(f"{amount_one:.2f} {symbol_one} is equal to {converted_value:.2f} {symbol_two}")
